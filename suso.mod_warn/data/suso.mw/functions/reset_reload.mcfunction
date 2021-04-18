@@ -1,0 +1,1 @@
+scoreboard players set #reload suso.mw 0

@@ -1,0 +1,1 @@
+execute store result score $pack_ct suso.mw run datapack list
