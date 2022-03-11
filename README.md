@@ -19,6 +19,7 @@ Configuration is done independently for each detectable element. The names used 
 - `misspack`: Found less datapacks than expected
 - `extrapack`: Found more datapacks than expected
 - `version`: Unintended Minecraft version
+- `help`: External commands
 
 In order to turn on detection for a certain element, do `scoreboard players set $d_[name] suso.mw 1`. When this element is detected, score `$[name] suso.mw` will be set to 1 and a warning will be displayed. If you which to turn off the default warning while keeping detection on, you can instead `scoreboard players set $d_[name] suso.mw 2`.
 
@@ -40,3 +41,8 @@ When detecting for either of these two cases, it's recommended to to also enable
 Minecraft version is detected via the DataVersion tag found in player entities.
 
 To store the intended DataVersion, `function suso.mw:get_version` should be run before packaging the map.
+
+### External commands
+External commands are detected by counting the output of `/help`.
+
+To store the intended amount of commands, `function suso.mw:count_help` should be run before packaging the map.
