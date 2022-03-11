@@ -1,0 +1,1 @@
+execute store result score $help_ct suso.mw run help
