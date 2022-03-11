@@ -3,7 +3,7 @@ A Minecraft datapack that allows to configure warnings in case certain mods / se
 
 Designed for use in maps.
 
-Can detect Spigot, Forge, Fabric API, Optifine, having commandblocks off, external datapacks, and missing datapacks.
+Can detect Spigot, Forge, Fabric API, Optifine, having commandblocks off, external datapacks, missing datapacks, and wrong Minecraft versions.
 
 Allows to easily configure custom warnings.
 
@@ -18,6 +18,7 @@ Configuration is done independently for each detectable element. The names used 
 - `commands`: Commandblocks are disabled
 - `misspack`: Found less datapacks than expected
 - `extrapack`: Found more datapacks than expected
+- `version`: Unintended Minecraft version
 
 In order to turn on detection for a certain element, do `scoreboard players set $d_[name] suso.mw 1`. When this element is detected, score `$[name] suso.mw` will be set to 1 and a warning will be displayed. If you which to turn off the default warning while keeping detection on, you can instead `scoreboard players set $d_[name] suso.mw 2`.
 
@@ -34,3 +35,8 @@ If score `$warn_title suso.mw` is set to 1, a title and playsound will also trig
 To store the intended datapack count, `function suso.mw:count_packs` should be run before packaging the map.
 
 When detecting for either of these two cases, it's recommended to to also enable detection for `spigot`, `forge`, and `fabric`; as they affect datapack count. If you don't want to warn players about these, you should set `$d_spigot suso.mw`, `$d_forge suso.mw`, and `$d_fabric suso.mw` to 2.
+
+### Minecraft version
+Minecraft version is detected via the DataVersion tag found in player entities.
+
+To store the intended DataVersion, `function suso.mw:get_version` should be run before packaging the map.
