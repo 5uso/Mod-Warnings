@@ -46,3 +46,9 @@ To store the intended DataVersion, `function suso.mw:get_version` should be run 
 External commands are detected by counting the output of `/help`.
 
 To store the intended amount of commands, `function suso.mw:count_help` should be run before packaging the map.
+
+## Crediting
+This library is licensed under the [Apache License 2.0](https://github.com/5uso/Mod-Warnings/blob/main/LICENSE). When using it as part of  your own projects, you must:
+
+- Include [crediting for the library](https://github.com/5uso/Mod-Warnings/blob/main/NOTICE) in a way visible to players. This probably fits best into the credits section of your map/datapack in-game, but in case that's impossible it may be done within a text file or documentation distributed with the project.
+- Include a copy of the [license](https://github.com/5uso/Mod-Warnings/blob/main/LICENSE).
