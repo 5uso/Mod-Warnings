@@ -1,0 +1,3 @@
+tellraw @s [{"text":"[!] ","color":"dark_red","bold":true},{"text":"Warning! ","color":"red","bold":true},{"text":"External datapacks were detected.\n\nThis map isn't intended to be played with any datapacks that are not included, as they may break important mechanics. Please remove any external datapack.","color":"red","bold":false}]
+
+execute if score $warn_title suso.mw matches 1 run function suso.mw:warn/title

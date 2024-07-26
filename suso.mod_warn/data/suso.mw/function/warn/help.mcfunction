@@ -1,0 +1,3 @@
+tellraw @s [{"text":"[!] ","color":"dark_red","bold":true},{"text":"Warning! ","color":"red","bold":true},{"text":"External commands found.\n\nThis indicates the presence of mods, which may break core mechanics of the map. Consider switching to a vanilla installation and loading a fresh save.","color":"red","bold":false}]
+
+execute if score $warn_title suso.mw matches 1 run function suso.mw:warn/title
