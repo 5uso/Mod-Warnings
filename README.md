@@ -7,8 +7,10 @@ Can detect Spigot, Forge, Fabric API, Optifine, having commandblocks off, extern
 
 Allows to easily configure custom warnings.
 
+Supports 1.21, confirmed to work all the way back to 1.16.5 as long as you rename the function folder to follow the old structure.
+
 ## How to use
-Detection runs 1 second after every reload. It can also be run with `function suso.mw:detect/do` (this may cause a datapack reload).
+Detection runs 1 second after every reload. It can also be run with `function suso.mw:detect/do` (this may cause a datapack reload). The warnings are buffered for each player individually until they move to ensure they are able to see them.
 
 Configuration is done independently for each detectable element. The names used to refer to them are:
 - `spigot`: Spigot server
