@@ -8,6 +8,7 @@ scoreboard players set $extrapack suso.mw 0
 scoreboard players set $version suso.mw 0
 scoreboard players set $help suso.mw 0
 scoreboard players set $lunar suso.mw 0
+scoreboard players set $essential suso.mw 0
 
 execute if score $d_spigot suso.mw matches 1.. run function suso.mw:detect/spigot
 execute if score $d_forge suso.mw matches 1.. run function suso.mw:detect/forge
@@ -17,6 +18,7 @@ execute if score $d_commands suso.mw matches 1.. run function suso.mw:detect/com
 execute if score $d_version suso.mw matches 1.. run function suso.mw:detect/version/try
 execute if score $d_help suso.mw matches 1.. run function suso.mw:detect/help
 execute if score $d_lunar suso.mw matches 1.. run function suso.mw:detect/lunar
+execute if score $d_essential suso.mw matches 1.. run function suso.mw:detect/essential/do
 
 execute store result score #curr_packs suso.mw run datapack list
 scoreboard players operation #curr_packs suso.mw -= $spigot suso.mw

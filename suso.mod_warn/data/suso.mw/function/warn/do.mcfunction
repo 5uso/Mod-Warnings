@@ -8,5 +8,6 @@ execute if score $help suso.mw matches 1.. if score $d_help suso.mw matches 1 ru
 execute if score $extrapack suso.mw matches 1.. if score $d_extrapack suso.mw matches 1 run function suso.mw:warn/extrapack
 execute if score $misspack suso.mw matches 1.. if score $d_misspack suso.mw matches 1 run function suso.mw:warn/misspack
 execute if score $lunar suso.mw matches 1.. if score $d_lunar suso.mw matches 1 run function suso.mw:warn/lunar
+execute if score $essential suso.mw matches 1.. if score $d_essential suso.mw matches 1 run function suso.mw:warn/essential
 
 scoreboard players operation @s suso.mw.count = $current suso.mw.count

@@ -3,7 +3,7 @@ A Minecraft datapack that allows to configure warnings in case certain mods / se
 
 Designed for use in maps.
 
-Can detect Spigot, Forge, Fabric API, Optifine, Lunar Client, having commandblocks off, external datapacks, missing datapacks, and wrong Minecraft versions.
+Can detect Spigot, Forge, Fabric API, Optifine, Lunar Client, Essential Mod, having commandblocks off, external datapacks, missing datapacks, and wrong Minecraft versions.
 
 Allows to easily configure custom warnings.
 
@@ -18,6 +18,7 @@ Configuration is done independently for each detectable element. The names used 
 - `fabric`: Fabric API (used by most fabric mods)
 - `optifine`: Optifine
 - `lunar`: Lunar Client
+- `essential`: Essential Mod
 - `commands`: Commandblocks are disabled
 - `misspack`: Found less datapacks than expected
 - `extrapack`: Found more datapacks than expected
